@@ -1,4 +1,3 @@
-/.vs
-n4_algorithm/n4_alg.aux
-n4_algorithm/n4_alg.log
-n4_algorithm/n4_alg.synctex.gz
+*.aux
+*.log
+*.gz
