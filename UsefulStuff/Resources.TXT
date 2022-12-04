@@ -1,0 +1,12 @@
+Постановка задачи:
+https://arxiv.org/pdf/cs/9908007.pdf
+
+Почта автора:
+markdb@cs.uu.nl
+
+Ссылки, которые могут пригодиться:
+Partitioning Arrangements of Lines II: Applications
+https://link.springer.com/content/pdf/10.1007/BF02187809.pdf
+
+Line Arrangements
+https://ti.inf.ethz.ch/ew/Lehre/CG13/lecture/Chapter%2011.pdf
