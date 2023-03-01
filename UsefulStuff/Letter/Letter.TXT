@@ -2,7 +2,7 @@ m.t.d.berg@tue.nl
 
 Тема: Problem of finding point seeing all segments completely
 
-Dear, Professor of Computer Science of Endhoven University of Technology, Mark de Berg.
+Dear, Professor Mark de Berg.
 
 My name is Kirill and I am a 5th year Peter the Great St. Petersburg Polytechnic University student of applied math.
 In one of computatinal geometry columns (Column 37, presented on 15 1999) I found following task presented by You:
