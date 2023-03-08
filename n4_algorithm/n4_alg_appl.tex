@@ -21,88 +21,44 @@
       \item Отрезки, концами которых являются данные точки.
       \item Информация о правильности затронутых отрезков.
 \end{enumerate}
-Возможны следующие случаи:
+Не умоляя общности, рассмотрим случаи для ребра расположенного вертикально:
 \begin{enumerate}
-      \item Точки $p_i, p_j$ являются точками одного отрезка. Ребро не
-            лежит на отрезке $p_i p_j$.
-      \item Точки $p_i, p_j$ являются точками одного отрезка. Ребро
-            лежит на отрезке $p_i p_j$.
-      \item Точки $p_i, p_j$ лежат на прямой с одной стороны относительно
-            <<Перешагиваемого>> ребра. $p_i, p_j$ лежат либо вместе
-            раньше своих пар в отсортированном по углу массиве, либо
-            вместе позже.
-      \item Точки $p_i, p_j$ лежат на прямой с одной стороны относительно
-            <<Перешагиваемого>> ребра. Дополнительное условие из пункта 3 
-            не выполнено.
-      \item Точки $p_i, p_j$ лежат на прямой по разные стороны 
-            относительно <<Перешагиваемого>> ребра. Дополнительное
-            условие аналогично пункту 3.
-      \item Точки $p_i, p_j$ лежат на прямой по разные стороны 
-            относительно <<Перешагиваемого>> ребра. Дополнительное условие 
-            из пункта 3 не выполнено.
-\end{enumerate}
-Для каждой ситуации предлагаются следующие действия:
-\begin{enumerate}
-      \item Точки $p_i, p_j$ меняются местами в массиве, <<правильность>>
-            отрезка остается неизменной.
+      \item Точки $p_i, p_j$ являются точками одного отрезка. Так как
+            варианты с <<перешагиванием>> отрезка исключены из рассмотрения,
+            вожможен только изображенный ниже случай и его зеркальная версия.
+            \par
+            Действие -- точки $p_i, p_j$ меняются местами в массиве, 
+            <<правильность>> отрезка остается неизменной.
             \begin{figure}[h]
             \centering
-            \includegraphics[width=0.5\linewidth]{near_segment_1.png}
+            \includegraphics[width=.5\linewidth]{one_segment.png}
             \end{figure}
-            \begin{figure}[h]
-            \centering
-            \includegraphics[width=0.5\linewidth]{near_segment_2.png}
-            \end{figure}
-      \item Необходимо честно пересчитать <<правильность>> отрезка
-            с выбором точки внутри грани. %нет?
+      \item Точки $p_i, p_j$ лежат на прямой с одной стороны относительно
+            <<Перешагиваемого>> ребра. Возможны варианты, изображенные ниже,
+            а также зеркальные к ним.
+            \par
+            Действие -- точки $p_i, p_j$ меняются местами в массиве.
+            <<Правильность>> обоих отрезков необходимо пересчитать честно.
             \begin{figure}[H]
             \centering
-            \includegraphics[width=0.5\linewidth]{segment_1.png}
-            \end{figure}
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.5\linewidth]{segment_2.png}
-            \end{figure}
-      \item Точки $p_i, p_j$ меняются местами в массиве. <<Правильность>>
-            обоих отрезков при прямом переходе (от первого рисунка ко второму)
-            необходимо пересчитывать честно с выбором точки внутри грани, %нет?
-            при обратном переходе оба отрезка перестают быть <<правильными>>
-            (если были).
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.5\linewidth]{one_side_1_1.png}
+            \includegraphics[width=.6\linewidth]{one_side_1.png}
             \end{figure}
             \begin{figure}[H]
             \centering
-            \includegraphics[width=0.5\linewidth]{one_side_1_2.png}
+            \includegraphics[width=.6\linewidth]{one_side_2.png}
             \end{figure}
-      \item Точки $p_i, p_j$ меняются местами в массиве, <<правильность>>
-            отрезков остается неизменной.
+      \item Точки $p_i, p_j$ лежат на прямой по разные стороны 
+            относительно <<Перешагиваемого>> ребра. Возможны варианты, 
+            изображенные ниже, а также зеркальные к ним.
+            \par
+            Действие -- без изменений.
             \begin{figure}[H]
             \centering
-            \includegraphics[width=0.5\linewidth]{one_side_2_1.png}
-            \end{figure}
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.5\linewidth]{one_side_2_2.png}
-            \end{figure}
-      \item Без изменений.
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.5\linewidth]{between_1_1.png}
+            \includegraphics[width=.6\linewidth]{between_1.png}
             \end{figure}
             \begin{figure}[H]
             \centering
-            \includegraphics[width=0.5\linewidth]{between_1_2.png}
-            \end{figure}
-      \item Без изменений.
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.5\linewidth]{between_2_1.png}
-            \end{figure}
-            \begin{figure}[H]
-            \centering
-            \includegraphics[width=0.5\linewidth]{between_2_2.png}
+            \includegraphics[width=.6\linewidth]{between_2.png}
             \end{figure}
 \end{enumerate}
 \end{document}
