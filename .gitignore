@@ -1,0 +1,14 @@
+.vs/
+*.aux
+*.log
+*.gz
+
+*.exe
+*.pdb
+*.ini
+*.user
+
+.vs/
+/src/.vs
+
+/src/x64
